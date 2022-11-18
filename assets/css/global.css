@@ -53,15 +53,16 @@ form {
 }
 
 #resultado {
-    font-family: monospace;
-    font-size: .9rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
     align-content: flex-end;
+    
 }
 
 strong {
     margin: 0;
     padding: 0;
-    background-color: rgba(153, 205, 50, 0.445);
+    background-color: rgba(223, 220, 22, 0.767);
 }
 
 footer { 

@@ -11,29 +11,76 @@ btnGerar.addEventListener('click', () => {
     let horario = document.getElementById('horaEvento').value
     let modo = document.querySelector('input[name="modo"]:checked').value
     let sala = document.getElementById('txtLocal').value
-    let listaItens = {}
-    let normas = document.getElementById('txtNormas').value
+    
+    let checkDocs = document.querySelectorAll('input[name="checkDocs"]:checked')
+    let itens = []
+    let cont = 0
+    checkDocs.forEach((doc) => {
+        itens.push(doc.value)
+        cont++
+    })
 
+    let normas = document.getElementById('txtNormas').value
+    
     let txtResultado = document.getElementById('resultado')
 
-    txtResultado.innerHTML = 
+    let flag = ''
+    for (let i = 0; i < cont; i++) {
+        flag += `<li>${itens[i]}</li>`
+    }
+
+    if (tipoParticipante != 'Orientador') {
+        txtResultado.innerHTML = 
     `
         Prezado(a) Dr(a).,
         <br><br>
         Seu nome foi indicado como membro <strong>${tipoParticipante}</strong> da comissão examinadora <strong>${evento}</strong> (<strong>${curso}</strong>) do(a) aluno(a) <strong>${nomeAluno}</strong> (Orientador(a): Dr(a).<strong>${nomeOrientador}</strong>), do <strong>${nomePrograma}</strong>.
-        <br><br>
+        <br><br><br>
         O evento ocorrerá no dia <strong>${data}</strong> às <strong>${horario}</strong>, de modo <strong>${modo}</strong>.
         <br>
-        Sala: <strong>${sala}</strong>
-        <br><br>
+        Sala: <strong><a href="${sala}" target="_blank">${sala}</a></strong>
+        <br><br><br>
         Encaminho em anexo os seguintes documentos:
         <br>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            ${flag}
+        </ul>
+        <br><br><br>
+        Normas <strong>${evento}</strong>: <a href="${normas}" target="_blank">Clique aqui</a>
+        <br><br><br>
+        Coloco-me à disposição para sanar quaisquer dúvidas.
+        <br><br><br>
+        Atenciosamente,
+    `
+    }
+    else {
+        txtResultado.innerHTML = 
+    `
+        Prezado(a) Dr(a).<strong>${nomeOrientador}</strong>,
+        <br><br>
+        Encaminho o material de defesa do(a) aluno(a) <strong>${nomeAluno}</strong>.
+        <br><br><br>
+        O evento ocorrerá no dia <strong>${data}</strong> às <strong>${horario}</strong>, de modo <strong>${modo}</strong>.
+        <br><br>
+        Sala: <strong><a href="${sala}" target="_blank">${sala}</a></strong>
+        <br><br><br>
+        Encaminho em anexo os seguintes documentos:
+        <br>
+        <ul>
+            ${flag}
         </ul>
         <br><br>
+        * Após o evento, encaminhar a ata assinada de próprio punho para a STPG. A assinatura necessita ser original.
+        <br>
+        ** Após o evento, encaminhar o certificado de aprovação e os pareceres para a STPG (impressos ou via e-mail)
+
+        <br><br><br>
         Normas <strong>${evento}</strong>: <a href="${normas}" target="_blank">Clique aqui</a>
+        <br><br><br>
+        Coloco-me à disposição para sanar quaisquer dúvidas.
+        <br><br><br>
+        Atenciosamente,
     `
+    }
+    
 })
