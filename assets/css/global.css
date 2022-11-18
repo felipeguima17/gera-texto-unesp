@@ -1,0 +1,71 @@
+* {
+    padding: .45rem;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+body {
+    background-color: rgba(221, 237, 250, 0.521);
+}
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+#lblItem {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background-image: linear-gradient(to right, white, rgb(146, 210, 240), rgb(27, 77, 153));
+}
+
+div img {
+    width: 200px; 
+    height: auto;
+    float: left;
+}
+
+form {
+    border: dotted;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    background-color: white;
+}
+
+.res {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    border: solid 3px tomato;
+    margin: 2rem 1rem;
+    width: auto;
+}
+
+#resultado {
+    font-family: monospace;
+    font-size: .9rem;
+    align-content: flex-end;
+}
+
+strong {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(153, 205, 50, 0.445);
+}
+
+footer { 
+    background-color: white;
+    width: auto;
+    text-align: center;
+}

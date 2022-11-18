@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de e-mail</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="assets/images/unesp.png" alt="logo-unesp">
+        </div>
+
+        <div>
+            <h1>Gerador de e-mail</h1>
+            <h2>Comissões examinadoras</h2>
+        </div>
+        
+    </header>
+
+    
+     
+     <section>
+        <form action="" method="post">
+            <div>
+                <label id="lblItem">Tipo do evento: </label>
+                <input type="radio" name="evento" id="r1" value="do Exame Geral de Qualificação" checked>
+                <label for="r1">Qualificação</label>
+                <input type="radio" name="evento" id="r2" value="da Defesa">
+                <label for="r2">Defesa</label>
+            </div>
+
+            <div>
+                <label id="lblItem">Curso: </label>
+                <input type="radio" name="curso" id="r1" value="Mestrado" checked>
+                <label for="r1">Mestrado</label>
+                <input type="radio" name="curso" id="r2" value="Doutorado">
+                <label for="r2">Doutorado</label>
+            </div>
+
+            <div>
+                <label id="lblItem">Participante: </label>
+                <input type="radio" name="participante" id="r1" value="Titular" checked>
+                <label for="r1">Titular</label>
+                <input type="radio" name="participante" id="r2" value="Suplente">
+                <label for="r2">Suplente</label>
+                <input type="radio" name="participante" id="r3" value="Orientador">
+                <label for="r2">Orientador</label>
+            </div>
+
+            <div>
+                <label id="lblItem">Nome do aluno: </label>
+                <input type="text" name="aluno" id="txtNomeAluno">
+            </div>
+
+            <div>
+                <label id="lblItem">Nome do orientador: </label>
+                <input type="text" name="orientador" id="txtNomeOrientador">
+            </div>
+
+            <div>
+                <label id="lblItem">Nome do Programa: </label>
+                <input type="text" name="programa" id="txtNomePrograma">
+            </div>
+
+            <div>
+                <label id="lblItem">Data do evento: </label>
+                <input type="text" name="data" id="dataEvento">
+                <label id="lblItem">Horário do evento: </label>
+                <input type="time" name="time" id="horaEvento">
+            </div>
+
+            <div>
+                <label id="lblItem">Modo de apresentação: </label>
+                <input type="radio" name="modo" id="r1" value="Presencial" checked>
+                <label for="r1">Presencial</label>
+                <input type="radio" name="modo" id="r2" value="Virtual">
+                <label for="r2">Virtual</label>
+                <input type="radio" name="modo" id="r3" value="Híbrido">
+                <label for="r3">Híbrido</label>
+            </div>
+            
+            <div>
+                <label id="lblItem">Local (ou link): </label>
+                <input type="text" name="local" id="txtLocal">
+            </div>
+
+            <div>
+                <label id="lblItem">Documentos a serem enviados: </label>
+                <input type="checkbox" name="checkDocs" id="atestado"> <label>Atestado</label>
+                <input type="checkbox" name="checkDocs" id="convite"> <label>Convite</label>
+                <input type="checkbox" name="checkDocs" id="exemplar"> <label>Exemplar</label>
+            </div>
+
+            <div>
+                <label id="lblItem">Normas (link): </label>
+                <input type="text" name="normas" id="txtNormas">
+            </div>
+
+            <div id="divBtnGerar">
+                <button type="button" id="btnGerar">Gerar</button>
+            </div>
+
+        </form>
+     </section>
+     <section class="res">
+        <p id="resultado">Texto aqui...</p>
+     </section>     
+
+     <footer>
+        <div>designed by Felipe Marchi</div>
+     </footer>
+
+     <script src="assets/javascript/main.js"></script>
+</body>
+</html>
