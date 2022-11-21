@@ -38,7 +38,7 @@ btnGerar.addEventListener('click', () => {
         <br><br><br>
         O evento ocorrerá no dia <strong>${data}</strong> às <strong>${horario}</strong>, de modo <strong>${modo}</strong>.
         <br>
-        Sala: <a href="${sala}" target="_blank"><strong>${sala}</strong></a>
+        Sala: <a href="https://${sala}" target="_blank"><strong>${sala}</strong></a>
         <br><br><br>
         Encaminho em anexo os seguintes documentos:
         <br>
@@ -62,7 +62,7 @@ btnGerar.addEventListener('click', () => {
         <br><br><br>
         O evento ocorrerá no dia <strong>${data}</strong> às <strong>${horario}</strong>, de modo <strong>${modo}</strong>.
         <br><br>
-        Sala: <a href="${sala}" target="_blank"><strong>${sala}</strong></a>
+        Sala: <a href="https://${sala}" target="_blank"><strong>${sala}</strong></a>
         <br><br><br>
         Encaminho em anexo os seguintes documentos:
         <br>
@@ -81,6 +81,5 @@ btnGerar.addEventListener('click', () => {
         <br><br><br>
         Atenciosamente,
     `
-    }
-    
+    }    
 })
