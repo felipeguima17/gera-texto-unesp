@@ -13,7 +13,7 @@
             <img src="assets/images/unesp.png" alt="logo-unesp">
         </div>
 
-        <div>
+        <div class="title">
             <h1>Gerador de e-mail</h1>
             <h2>Comissões examinadoras</h2>
         </div>
@@ -23,31 +23,31 @@
     
      
      <section>
-        <form action="" method="post">
+        <form>
             <div>
                 <label id="lblItem">Tipo do evento: </label>
                 <input type="radio" name="evento" id="r1" value="do Exame Geral de Qualificação" checked>
-                <label for="r1">Qualificação</label>
+                <label for="r1" class="lblAlt">Qualificação</label>
                 <input type="radio" name="evento" id="r2" value="da Defesa">
-                <label for="r2">Defesa</label>
+                <label for="r2" class="lblAlt">Defesa</label>
             </div>
 
             <div>
                 <label id="lblItem">Curso: </label>
                 <input type="radio" name="curso" id="r1" value="Mestrado" checked>
-                <label for="r1">Mestrado</label>
+                <label for="r1" class="lblAlt">Mestrado</label>
                 <input type="radio" name="curso" id="r2" value="Doutorado">
-                <label for="r2">Doutorado</label>
+                <label for="r2" class="lblAlt">Doutorado</label>
             </div>
 
             <div>
                 <label id="lblItem">Participante: </label>
                 <input type="radio" name="participante" id="r1" value="Titular" checked>
-                <label for="r1">Titular</label>
+                <label for="r1" class="lblAlt">Titular</label>
                 <input type="radio" name="participante" id="r2" value="Suplente">
-                <label for="r2">Suplente</label>
+                <label for="r2" class="lblAlt">Suplente</label>
                 <input type="radio" name="participante" id="r3" value="Orientador">
-                <label for="r2">Orientador</label>
+                <label for="r3" class="lblAlt">Orientador</label>
             </div>
 
             <div>
@@ -75,11 +75,11 @@
             <div>
                 <label id="lblItem">Modo de apresentação: </label>
                 <input type="radio" name="modo" id="r1" value="Presencial">
-                <label for="r1">Presencial</label>
+                <label for="r1" class="lblAlt">Presencial</label>
                 <input type="radio" name="modo" id="r2" value="Virtual" checked>
-                <label for="r2">Virtual</label>
+                <label for="r2" class="lblAlt">Virtual</label>
                 <input type="radio" name="modo" id="r3" value="Híbrido">
-                <label for="r3">Híbrido</label>
+                <label for="r3" class="lblAlt">Híbrido</label>
             </div>
             
             <div>
@@ -90,15 +90,15 @@
             <div>
                 <label id="lblItem">Documentos a serem enviados: </label>
                 <p>
-                    <input type="checkbox" name="checkDocs" id="c1" value="Atestado de participação" checked> <label>Atestado</label>
-                    <input type="checkbox" name="checkDocs" id="c2" value="Carta convite" checked> <label>Convite</label>
-                    <input type="checkbox" name="checkDocs" id="c3" value="Exemplar" checked> <label>Exemplar</label>
+                    <input type="checkbox" name="checkDocs" id="c1" value="Atestado de participação" checked> <label class="lblAlt">Atestado</label>
+                    <input type="checkbox" name="checkDocs" id="c2" value="Carta convite" checked> <label class="lblAlt">Convite</label>
+                    <input type="checkbox" name="checkDocs" id="c3" value="Exemplar" checked> <label class="lblAlt">Exemplar</label>
                 </p>
                 <p>
-                    <input type="checkbox" name="checkDocs" id="c4" value="Pareceres"> <label>Pareceres</label>
-                    <input type="checkbox" name="checkDocs" id="c5" value="Ata"> <label>Ata</label>
-                    <input type="checkbox" name="checkDocs" id="c6" value="Certificado de aprovação"> <label>Certificado de aprovação</label>
-                    <input type="checkbox" name="checkDocs" id="c7" value="Cartaz"> <label>Cartaz</label>
+                    <input type="checkbox" name="checkDocs" id="c4" value="Pareceres"> <label class="lblAlt">Pareceres</label>
+                    <input type="checkbox" name="checkDocs" id="c5" value="Ata"> <label class="lblAlt">Ata</label>
+                    <input type="checkbox" name="checkDocs" id="c6" value="Certificado de aprovação"> <label class="lblAlt">Certificado de aprovação</label>
+                    <input type="checkbox" name="checkDocs" id="c7" value="Cartaz"> <label class="lblAlt">Cartaz</label>
                 </p>
                 
             </div>

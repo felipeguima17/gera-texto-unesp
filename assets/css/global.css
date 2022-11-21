@@ -1,18 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
 * {
     padding: .45rem;
     width: auto;
     height: auto;
     margin: auto;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background-color: rgba(221, 237, 250, 0.521);
+    background-color: rgb(56, 49, 49);
+    overflow-x: hidden;
 }
 
 label {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.1rem;
     font-weight: normal;
+}
+
+.title {
+    color: bisque;
 }
 
 #lblItem {
@@ -22,10 +30,11 @@ label {
 }
 
 header {
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: baseline;
-    background-image: linear-gradient(to right, white, rgb(146, 210, 240), rgb(27, 77, 153));
+    background-image: linear-gradient(to left, rgb(20, 20, 20), rgb(47, 48, 48), rgb(84, 87, 87));
 }
 
 div img {
@@ -40,16 +49,22 @@ form {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
-    background-color: white;
+    background-color: rgba(15, 19, 36, 0.788);
+    border-radius: 1rem;
+    color: antiquewhite;
 }
 
 .res {
     display: flex;
+    align-items: row;
     background-color: white;
     justify-content: center;
-    border: solid 3px tomato;
-    margin: 2rem 1rem;
-    width: auto;
+    align-items: center;
+    border: solid 3px rgb(10, 34, 110);
+    width: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 #resultado {
@@ -62,11 +77,51 @@ form {
 strong {
     margin: 0;
     padding: 0;
-    background-color: rgba(223, 220, 22, 0.767);
+    background-color: rgba(208, 255, 0, 0.712);
 }
 
 footer { 
-    background-color: white;
-    width: auto;
+    width: 100vw;
+    background-color: tomato;
+    width: 100vw;
     text-align: center;
+    margin: 0;
+    color: antiquewhite;
+    font-weight: 500;
+}
+
+div > button {
+    background-color: black;
+    color: greenyellow;
+    border: none;
+    border-radius: 1rem;
+    width: 15vw;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: monospace;
+}
+
+label {
+    color: tomato;
+}
+
+.lblAlt {
+    color: rgb(0, 219, 0);
+}
+
+input {
+    border-radius: 1rem;
+    border-color: black;
+    box-shadow: 1px 1px rgba(245, 243, 243, 0.336);
+}
+
+input[type=text], input[type=time] {
+    background: rgb(0, 128, 0);
+    color: white;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 992px) {
+
 }

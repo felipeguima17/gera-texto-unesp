@@ -38,14 +38,14 @@ btnGerar.addEventListener('click', () => {
         <br><br><br>
         O evento ocorrerá no dia <strong>${data}</strong> às <strong>${horario}</strong>, de modo <strong>${modo}</strong>.
         <br>
-        Sala: <strong><a href="${sala}" target="_blank">${sala}</a></strong>
+        Sala: <a href="${sala}" target="_blank"><strong>${sala}</strong></a>
         <br><br><br>
         Encaminho em anexo os seguintes documentos:
         <br>
         <ul>
             ${flag}
         </ul>
-        <br><br><br>
+        <br><br>
         Normas <strong>${evento}</strong>: <a href="${normas}" target="_blank">Clique aqui</a>
         <br><br><br>
         Coloco-me à disposição para sanar quaisquer dúvidas.
@@ -56,13 +56,13 @@ btnGerar.addEventListener('click', () => {
     else {
         txtResultado.innerHTML = 
     `
-        Prezado(a) Dr(a).<strong>${nomeOrientador}</strong>,
+        Prezado(a) Dr(a). <strong>${nomeOrientador}</strong>,
         <br><br>
         Encaminho o material de defesa do(a) aluno(a) <strong>${nomeAluno}</strong>.
         <br><br><br>
         O evento ocorrerá no dia <strong>${data}</strong> às <strong>${horario}</strong>, de modo <strong>${modo}</strong>.
         <br><br>
-        Sala: <strong><a href="${sala}" target="_blank">${sala}</a></strong>
+        Sala: <a href="${sala}" target="_blank"><strong>${sala}</strong></a>
         <br><br><br>
         Encaminho em anexo os seguintes documentos:
         <br>
